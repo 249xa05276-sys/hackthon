@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 35px;
+    background-color: #111827;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+header p {
+    font-size: 17px;
+    color: #cccccc;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.panel {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #cccccc;
+}
+
+.panel h2 {
+    margin-top: 0;
+}
+
+.small {
+    color: #777777;
+}
+
+/* REEL OPTIONS */
+
+label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 55px;
+
+    background-color: #f8fafc;
+
+    margin-bottom: 12px;
+    padding: 12px 15px;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: #eeeeff;
+}
+
+/* CHECKBOX */
+
+label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+
+    margin: 0 12px 0 0;
+
+    flex-shrink: 0;
+}
+
+/* BUTTON */
+
+button {
+    width: 100%;
+
+    padding: 15px;
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #4f46e5;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3730a3;
+}
+
+/* RESULT */
+
+.result-panel {
+    min-height: 500px;
+}
+
+.waiting {
+    text-align: center;
+    padding: 70px 20px;
+    color: #777777;
+}
+
+.big-icon {
+    font-size: 60px;
+}
+
+#result h3 {
+    color: #4f46e5;
+    margin-top: 20px;
+}
+
+#result p {
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777777;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
